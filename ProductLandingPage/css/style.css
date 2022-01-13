@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root
+{
+    --red:#ff3838;
+}
+
+/* formating all the elements */
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+
+body{
+    background: #f7f7f7;
+    min-height: 200vh;
+}
+
+.heading{
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 2.5rem;
+    color: #666;
+}
+.heading span{
+    color: var(--red);
+}
+
+
+/* header section starts here */
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .6s;
+    padding: 15px 100px;
+    z-index: 100000;
+}
+#header.sticky{
+    padding: 15px 100px;
+    background: #fff;
+}
+#header #header-img{
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: .6s;
+}
+#header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#header ul li{
+    position: relative;
+    list-style: none;
+}
+#header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: .6s;
+}
+
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("https://i.postimg.cc/mgM99nk9/revolt-164-6w-VEHf-I-unsplash.jpg") no-repeat;
+    background-size: cover;
+}
+#header.sticky #header-img,
+#header.sticky ul li a{
+    color: var(--red);
+    font-weight: 500px;   
+}
+/* header section ends here */
+
+
+/* home section starts here */
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: left;
+    color: #fff;
+    margin-left: 25px;
+}
+
+.content h1{
+    font-size: 3.75rem;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 200;
+    line-height: 25px;
+    font-size: 1.25rem;
+    text-align: justify;
+}
+.content span{
+    font-weight: bold;
+    color: #FF6600;
+}
+.email-box
+{
+    display: flex;
+    height: 40px;
+    justify-content: flex-start;
+}
+.email-box i
+{
+    background: var(--red);
+    width: 50px;
+    line-height: 40px;
+    padding-left: 15px;
+    border-radius: 50px 0 0 50px;
+}
+
+#email, #submit {
+    border: none;
+    outline: none;
+}
+#email
+{
+    width: 0;
+    transition: 0.6s;
+}
+.email-box:hover > #email, #email:focus{
+    width: 260px;
+    padding: 0 15px;
+}
+#submit
+{
+    background: var(--red);
+    color: #FFF;
+    padding: 0 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 0 50px 50px 0;
+}
+
+/*---------------home section ends here  --------*/
+
+/*---------------Start About--------*/
+.container
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+
+.about-content
+{
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin: 30px auto;
+}
+.about-content .article
+{
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+    background-color: #eee;
+    padding: 25px 25px;
+}
+.about-content .article h2
+{
+    color: var(--red);
+    font-size: 22px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.about-content .article p
+{
+    margin-top: 30px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #222;
+}
+.about-content .article a{
+    font-size: 1rem;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #FF6600;
+    border-radius: 25px;
+    color: #fff;
+    border: 1px solid;
+    letter-spacing: 1.5px;
+    margin-top: 35px;
+}
+.about-content .article a:hover
+{
+    background-color: #fff;
+    color: #FF6600;
+    transition: 0.2s ease;
+}
+#video{
+    width:560;
+    height:340;
+}
+/*---------------End About--------*/
+
+/*--------------- Start Product --------*/
+
+.product .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+}
+.product .box-container .box{
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border: .1rem solid rgba(0, 0, 0, .3);
+    border-radius: .5rem;
+    text-align: center;
+    flex: 1 1 26rem;
+    position: relative;
+    margin: 0.5rem;
+}
+.product .box-container .box img{
+    height: 25rem;
+    object-fit: cover;
+    width: 100%;
+    border-radius: .5rem;
+}
+
+.product .box-container .box .price{
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+    background: var(--red);
+    color: #fff;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+}
+.product .box-container .box h3{
+    color: #333;
+    font-size: 2rem;
+    padding-top: 1rem;
+}
+.product .box-container .box .stars i{
+    color: gold;
+    font-size: 1.2rem;
+    padding: 1rem .1rem;
+}
+.product .box-container .box .cart a{
+    color: var(--red);
+    font-size: 1.3rem;
+    padding: .5rem .5rem;
+}
+.product .box-container .box .cart a:hover{
+    color: #333;
+}
+/*--------------- End Product --------*/
+
+
+
+/*--------------- start contact --------*/
+
+.contact{
+    background: #000;
+    text-align: center;
+}
+
+.contact .social{
+    display: flex;
+    gap: 6rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+}
+
+.contact .credit{
+    padding: 1rem 1rem;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.1rem;
+}
+
+.contact .credit span{
+    color: var(--red);
+}
+.contact .social i {
+    color: var(--red);
+}
+/*--------------- End contact --------*/
+
+
