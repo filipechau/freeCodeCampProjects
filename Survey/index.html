@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+
+	<link rel="stylesheet" type="text/css" href="_css/style.css">
+
+</head>
+<body>
+	<h1 id="title">Talk with Us - Survey Form</h1>
+	<p id="description"><b>Tell us what you're looking for<b></p>
+
+	<form id="survey-form" action="">
+		<div class="input-headings">
+		<label for="name">Name</label>
+		<input id="name-label" type="text" name="name" placeholder="Enter your name" maxlength="100" class="form-inputs"required>
+		<br>
+
+		<label for="email">Email</label>
+		<input id="email-label" type="email" name="email"placeholder="Enter your email" class="form-inputs" required><br>
+		
+
+		<label for="number">Age<span class="small">(It's optional)</span></label>
+		<input id="number-label" type="number" name="number" placeholder="age" min="18" max="90" class="form-inputs"><br>
+
+
+
+		<label for="dropdown" id="service"><b>What kind of service do you need?<b></label>
+		<select id="dropdown" class="form-inputs">
+		  	<option value="Choose a service" disabled selected>Choose a service</option>
+			<option value="Graphic Design">Ghaphic Design</option>
+			<option value="Computer Network">Computer Network</option>
+			<option value="Software Development">Software Development</option>
+			<option value="Home Automation">Home Automation</option>
+			<option value="Other">Other</option>
+		</select><br>
+
+		<label for="work"><b>Do you ever worked with us?<b></label>
+		<br>
+		<br>
+		<input id="work" type="radio" name="option" value="absolutly">
+		<label for="work">Absolutly</label>
+		<br>
+		
+		<input id="work" type="radio" name="option" value="perhaps">
+		<label for="work">Perhaps</label>
+		<br>
+	
+		<input id="work" type="radio" name="option" value="never">
+		<label for="work">Never</label>
+		<br><br>
+	
+		<label for="checkbox"><b>Specify the type of service according to what you have chose previously <span class="small">(check all that apply)</span><b></label><br><br>
+		<input id="checkbox" type="checkbox" name="features" value="budget">
+		<label for="checkbox">Project Budget</label><br>
+
+		<input id="checkbox" type="checkbox" name="features" value="instalation">
+		<label for="checkbox">Instalation</label><br>
+
+		<input id="checkbox" type="checkbox" name="features" value="maintance">
+		<label for="checkbox">Maintence</label><br>
+
+		<input id="checkbox" type="checkbox" name="features" value="development">
+		<label id="checkbox">Development of an App</label><br>
+
+		<input id="checkbox" type="checkbox" name="features" value="debugging">
+		<label for="checkbox">Debugging</label><br>
+
+		<input id="checkbox" type="checkbox" name="features" value="correction">
+		<label for="checkbox">Correction</label><br><br>
+
+		<label for="comment">Leave us your suggestion</label>
+		<textarea type="text" id="comment" name="suggestion" rows="5" cols="90" placeholder="Write your suggestion...">	
+		</textarea>
+		<br><br>
+
+		<button class="submit-btn" id="submit" type="submit" value="submit-sugg">Submit</button>
+	  </div>
+	</form>
+</body>
+</html>
