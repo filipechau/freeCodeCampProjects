@@ -7,7 +7,7 @@
     <!-- custom css link file -->
     <link rel="stylesheet" href="css/style.css" />
 
-    <!-- font awwesome cdn link -->
+    <!-- font awesome cdn link -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -18,12 +18,15 @@
   <body>
     <!-- header section starts here -->
     <header id="header">
-      <a href="#" id="header-img"
-        >Fashion<i class="fab fa-pied-piper-hat"></i
-      ></a>
+      <img
+        id="header-img"
+        src="https://i.postimg.cc/3xZjk6dw/Pngtree-orange-wallet-icon-4462385.png"
+        alt="logo"
+        class="logo"
+      />
       <nav id="nav-bar">
         <ul>
-          <li class="nav-link"><a href="#">Home</a></li>
+          <li class="nav-link"><a href="#home">Home</a></li>
           <li class="nav-link"><a href="#about">About</a></li>
           <li class="nav-link"><a href="#product">Product</a></li>
           <li class="nav-link"><a href="#contact">Contact</a></li>
@@ -58,7 +61,7 @@
                 value=""
                 placeholder="type your email here..."
               />
-              <button id="submit" type="submit">Subscribe</button>
+              <input id="submit" type="submit" value="subscribe" />
             </div>
           </form>
         </div>
@@ -227,6 +230,6 @@
         header.classList.toggle("sticky", window.scrollY > 0);
       });
     </script>
-    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
