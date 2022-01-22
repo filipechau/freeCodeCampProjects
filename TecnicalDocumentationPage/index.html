@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+
+    <!-- script for displaying code as code in a web browser -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.26.0/components/prism-javascript.min.js"></script>
+
+    <!-- custom css link file -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tecnical Documentation - Node.js</title>
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav id="navbar">
+      <header>Get Started on Node.js</header>
+      <ul>
+        <li><a class="nav-link" href="#intro">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#whatis">What Node.js is used for?</a>
+        </li>
+        <li><a class="nav-link" href="#node_vs_php">Node.js Vs PHP</a></li>
+        <li><a class="nav-link" href="#install">How to install Node.js</a></li>
+        <li>
+          <a class="nav-link" href="#how_to_use"
+            >How do I start with Node.js?</a
+          >
+        </li>
+        <li><a class="nav-link" href="#node_module">Modules of Node.js</a></li>
+        <li><a class="nav-link" href="#http_module">Node.js HTTP Module</a></li>
+        <li>
+          <a class="nav-link" href="#file_system">Node.js File System Module</a>
+        </li>
+        <li><a class="nav-link" href="#url_module">Node.js URL Module</a></li>
+        <li><a class="nav-link" href="#npm_module">Node.js NPM Module</a></li>
+        <li><a class="nav-link" href="#events">Node.js Events</a></li>
+        <li><a class="nav-link" href="#email">Node.js Email</a></li>
+        <li>
+          <a class="nav-link" href="#built_module">Node.js Built-in-Modules</a>
+        </li>
+        <li><a class="nav-link" href="#email">Node.js Email</a></li>
+        <li>
+          <a class="nav-link" href="#built_module">Node.js Built-in-Modules</a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+      <section id="intro">
+        <header>Introduction</header>
+        <p>
+          According to
+          <a href="https://en.wikipedia.org/wiki/Node.js">wikipedia</a> Node.js
+          was written initially by Ryan Dahl in 2009, about thirteen years after
+          the introduction of the first server-side JavaScript environment,
+          Netscape's LiveWire Pro Web. The initial release supported only Linux
+          and Mac OS X. Its development and maintenance was led by Dahl and
+          later sponsored by Joyent. Dahl criticized the limited possibilities
+          of the most popular web server in 2009, Apache HTTP Server, to handle
+          a lot of concurrent connections (up to 10,000 and more) and the most
+          common way of creating code (sequential programming), when code either
+          blocked the entire process or implied multiple execution stacks in the
+          case of simultaneous connections. Dahl demonstrated the project at the
+          inaugural European JSConf on November 8, 2009. Node.js combined
+          Google's V8 JavaScript engine, an event loop, and a low-level I/O API.
+        </p>
+      </section>
+      <section id="whatis">
+        <header>What Node.js is used for?</header>
+        <p>
+          Node.js has proved itself useful for developing applications that make
+          use of the ability to run JavaScript both on the client as well as on
+          the server side. According to a survey made by the Node.js Foundation,
+          whose mission is to enable widespread adoption and help accelerate the
+          development of Node.js, web applications are the top use case, with a
+          share of 85%. But as the examples below illustrate, they are not the
+          only one.
+        </p>
+        <ul>
+          <li>Chat applications</li>
+          <li>Streaming applications</li>
+          <li>Command-line applications</li>
+          <li>Browser games</li>
+          <li>Embedded systems</li>
+        </ul>
+      </section>
+      <section id="node_vs_php">
+        <header>Node.js Vs PHP</header>
+        <p>
+          PHP and Node.js are two of the major backend technologies that power
+          web applications. PHP is older between the two, so it naturally has a
+          larger community and major projects in its kitty. That said, the PHP
+          community has started realizing a lack of relevant and updated
+          projects. Surprisingly, this is exactly where Node.js is most
+          successful- building a strong user base across projects meant for
+          modern-day use cases.
+        </p>
+
+        <p>
+          PHP is among the most reliable server-side scripting languages in the
+          employ of giants like Facebook, Wikipedia, and Tumblr. This language
+          has been around since 1995 and continually benefits from a large
+          community that’s sprouted around it.
+          <a href="https://www.simform.com/blog/nodejs-vs-php/">[learn more]</a>
+        </p>
+
+        <p>
+          Although it’s synchronous and works well only with a central server in
+          place, it has several built-in functions and libraries that make
+          building e-commerce and CMS websites super easy.
+        </p>
+
+        <p>
+          Launched in 2009, Node.js has quickly established its dominance in key
+          web-application categories. Used by LinkedIn, Netflix, Medium, and
+          other big players, its popular asynchronous architecture gives it the
+          efficiency and speed crucial for the handling of queries.
+        </p>
+
+        <p>
+          While PHP is a scripting language and Node.js is a runtime
+          environment, both are widely used as backend technologies for web-app
+          development. With the help of libraries, frameworks, and APIs, both
+          Node.js and PHP prove ideal for an array of projects.
+          <a href="https://www.simform.com/blog/nodejs-vs-php/">[learn more]</a>
+        </p>
+      </section>
+      <section id="install">
+        <header>How to install Node.js</header>
+
+        <p>
+          According to the website <a>nodejs.dev</a> Node.js can be installed in
+          different ways. They highlights the most common and convenient ones.
+          Official packages for all the major platforms are available at
+          <a href="https://nodejs.dev/download/">https://nodejs.dev/download/</a
+          >.<br />
+          One very convenient way to install Node.js is through a package
+          manager. In this case, every operating system has its own. Other
+          package managers for MacOS, Linux, and Windows are listed in
+          <a
+            href="https://nodejs.dev/download/package-manager/
+          "
+            >https://nodejs.dev/download/package-manager/.</a
+          ><br /><br />
+          <code>nvm</code> is a popular way to run Node.js. It allows you to
+          easily switch the Node.js version, and install new versions to try and
+          easily rollback if something breaks, for example. It is also very
+          useful to test your code with old Node.js versions.<br />
+          See
+          <a href="https://github.com/nvm-sh/nvm "
+            >https://github.com/nvm-sh/nvm
+          </a>
+          for more information about this option. In any case, when Node.js is
+          installed you'll have access to the node executable program in the
+          command line.
+        </p>
+      </section>
+      <section id="how_to_use">
+        <header>Examples of Nodejs</header>
+
+        <pre>
+          <code>
+          var http = require('http');
+          
+          http.createServer(function (req, res) {
+            res.writeHead(200, {'Content-Type': 'text/plain'});
+            res.end('Hello World!');
+          }).listen(8080);
+        </code>
+        </pre>
+      </section>
+      <section id="node_module">
+        <header>Modules of Node.js</header>
+      </section>
+      <section id="http_module">
+        <header>Node.js HTTP Module</header>
+      </section>
+      <section id="file_system">
+        <header>Node.js File System Module</header>
+      </section>
+      <section id="url_module">
+        <header>Node.js URL Module</header>
+      </section>
+      <section id="npm_module">
+        <header>Node.js NPM Module</header>
+      </section>
+      <section id="events">
+        <header>Node.js Events</header>
+      </section>
+      <section id="email">
+        <header>Node.js Email</header>
+      </section>
+      <section id="built_module">
+        <header>Node.js Built-in-Modules</header>
+      </section>
+    </main>
+
+    <!-- <script
+      src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"
+      type="text/javascript"
+    ></script> -->
+  </body>
+</html>
