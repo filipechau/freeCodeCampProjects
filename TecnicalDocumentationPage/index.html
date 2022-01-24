@@ -19,6 +19,9 @@
       <ul>
         <li><a class="nav-link" href="#intro">Introduction</a></li>
         <li>
+          <a class="nav-link" href="#history">A brief history about Node.js</a>
+        </li>
+        <li>
           <a class="nav-link" href="#whatis">What Node.js is used for?</a>
         </li>
         <li><a class="nav-link" href="#node_vs_php">Node.js Vs PHP</a></li>
@@ -47,6 +50,7 @@
       </ul>
     </nav>
 
+    <!-- main starts -->
     <main id="main-doc">
       <section id="intro">
         <header>Introduction</header>
@@ -66,6 +70,125 @@
           inaugural European JSConf on November 8, 2009. Node.js combined
           Google's V8 JavaScript engine, an event loop, and a low-level I/O API.
         </p>
+      </section>
+      <section id="history">
+        <header>A brief history about Node.js</header>
+        <p>
+          Node.js happened to be built in the right place and right time, but
+          luck isn't the only reason why it is popular today. It introduces a
+          lot of innovative thinking and approaches for JavaScript server-side
+          development that have already helped many developers.
+        </p>
+
+        <div class="date">
+          <span>2009</span>
+          <p>Node.js is born The first form of npm is created</p>
+        </div>
+
+        <div class="date">
+          <span>2010</span>
+          <p>Express is born Socket.io is born</p>
+        </div>
+
+        <div class="date">
+          <span>2011</span>
+          <ul>
+            <li>npm hits version 1.0</li>
+            <li>
+              Larger companies start adopting Node.js: LinkedIn, Uber, etc.
+            </li>
+            <li>hapi is born</li>
+          </ul>
+        </div>
+
+        <div class="date">
+          <span>2012</span>
+          <ul>
+            Adoption continues very rapidly
+          </ul>
+        </div>
+
+        <div class="date">
+          <span>2013</span>
+          <ul>
+            <li>First big blogging platform using Node.js: Ghost</li>
+            <li>Koa is born</li>
+          </ul>
+        </div>
+
+        <div class="date">
+          <span>2014</span>
+          <p>
+            The Big Fork: io.js is a major fork of Node.js, with the goal of
+            introducing ES6 support and moving faster
+          </p>
+        </div>
+
+        <div class="date">
+          <span>2015</span>
+          <ul>
+            <li>The Node.js Foundation is born</li>
+            <li>IO.js is merged back into Node.js</li>
+            <li>npm introduces private modules</li>
+            <li>Node.js 4 (versions 1, 2 and 3 never previously released)</li>
+          </ul>
+        </div>
+
+        <div class="date">
+          <span>2016</span>
+          <ul>
+            <li>The leftpad incident</li>
+            <li>Yarn is born</li>
+            <li>Node.js 6</li>
+          </ul>
+        </div>
+
+        <div class="date">
+          <span>2017</span>
+          <ul>
+            <li>npm focuses more on security</li>
+            <li>Node.js 8</li>
+            <li>HTTP/2</li>
+            <li>
+              V8 introduces Node.js in its testing suite, officially making
+              Node.js a target for the JS engine, in addition to Chrome
+            </li>
+            <li>3 billion npm downloads every week</li>
+          </ul>
+        </div>
+
+        <div class="date">
+          <span>2018</span>
+          <ul>
+            <li>Node.js 10</li>
+            <li>ES modules .mjs experimental support</li>
+            <li>Node.js 11</li>
+          </ul>
+        </div>
+
+        <div class="date">
+          <span>2019</span>
+          <ul>
+            <li>Node.js 12</li>
+            <li>Node.js 13</li>
+          </ul>
+        </div>
+
+        <div class="date">
+          <span>2020</span>
+          <ul>
+            <li>Node.js 14</li>
+            <li>Node.js 15</li>
+          </ul>
+        </div>
+
+        <div class="date">
+          <span>2021</span>
+          <ul>
+            <li>Node.js 16</li>
+            <li>Node.js 17</li>
+          </ul>
+        </div>
       </section>
       <section id="whatis">
         <header>What Node.js is used for?</header>
@@ -158,8 +281,8 @@
         </p>
       </section>
       <section id="how_to_use">
-        <header>Examples of Nodejs</header>
-
+        <header>How do I start with Node.js?</header>
+        <p>A simple hello word program in Node.js</p>
         <pre>
           <code>
           var http = require('http');
@@ -173,7 +296,32 @@
       </section>
       <section id="node_module">
         <header>Modules of Node.js</header>
+
+        <p>
+          Module in Node.js is a simple or complex functionality organized in
+          single or multiple JavaScript files which can be reused throughout the
+          Node.js application. Each module in Node.js has its own context, so it
+          cannot interfere with other modules or pollute global scope. Also,
+          each module can be placed in a separate .js file under a separate
+          folder.
+        </p>
+
+        <p>
+          Node.js implements CommonJS modules standard. CommonJS is a group of
+          volunteers who define JavaScript standards for web server, desktop,
+          and console application.
+        </p>
+        <h4>Node.js Module Types</h4>
+
+        <p>Node.js includes three types of modules:</p>
+
+        <ol>
+          <li>Core Modules</li>
+          <li>Local Modules</li>
+          <li>Third Party Modules</li>
+        </ol>
       </section>
+
       <section id="http_module">
         <header>Node.js HTTP Module</header>
       </section>
