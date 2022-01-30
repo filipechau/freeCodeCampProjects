@@ -19,12 +19,12 @@ body{
 
 header{
     font-size: 19px;
-    font-weight: 550; 
-   
+    font-weight: 500; 
+    margin: 15px;  
 }
 
 /* Navbar starts here */
-nav{
+#navbar{
     max-width: 700px;
     height: 100vh;
     overflow-y: scroll;
@@ -34,18 +34,20 @@ nav{
 nav ul {
     list-style-type: none;
    margin-left: 15px;
-   font-weight: 550;
+   font-weight: 500;
 }
-nav ul li a{
+.nav-link{
     text-decoration: none;
     padding: 5px;
     color: #000;
-    border: 1px solid #000;
+}
+nav ul li:hover{
+    background-color: #fff;
 }
 
 /* main section starts here */
 
-main{
+#main-doc{
     flex: 1;
     overflow-y: scroll;
     height: 100vh;
@@ -61,6 +63,9 @@ p{
     text-align: left;
     margin-bottom: 5px;
 }
+h4{
+    margin: 16px;
+}
 section ul {
     line-height: 25px;
     font-size: 15px;
@@ -69,12 +74,12 @@ section ul {
     margin-left: 30px;
 }
 
-
 code{
-    color: crimson;
+    font-size: 13.5px;
+    padding: 3px;
+}
+.code{
     background-color: #f1f1f1;
-    padding: 2px;
-    font-size: 15px;
 }
 
 .date{ 
