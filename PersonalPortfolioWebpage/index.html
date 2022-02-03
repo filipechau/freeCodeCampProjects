@@ -5,47 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Portfolio</title>
+
+    <!-- link to css custom -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <nav id="navbar">
       <ul>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Contact">Contact</a></li>
+        <li><a href="#profile-link">Profile</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <section id="welcome-section">
-      <h1>Hi, My Name is Filipe Chau</h1>
-      <h3>I'm a Data Center Operator and a Junior FullStack Web Developer</h3>
-    </section>
-
-    <section id="Projects">
-      <div class="project-title">
-        <a href="">Tribute Page</a>
-      </div>
-      <div class="project-title">
-        <a href="">Technical Documentation Page</a>
-      </div>
-      <div class="project-title">
-        <a href="">Survey Form</a>
-      </div>
-      <div class="project-title">
-        <a href="">Product Landing Page</a>
-      </div>
-      <div class="project-title">
-        <a href="">Website</a>
-      </div>
-      <div class="project-title">
-        <a href="">A simple app</a>
+      <div class="name">
+        <h1>Hi, My Name is Filipe Chau</h1>
+        <p>I'm a Data Center Operator and a Junior FullStack Web Developer</p>
       </div>
     </section>
+    <section id="about"></section>
 
-    <footer id="#Contact">
-      <div id="profile-link">
-        <a href="github.com/filipechau">Github</a>
+    <!--My Projects section -->
+    <section id="projects" class="projects">
+      <h1 class="heading"><span>My</span> Projects</h1>
+
+      <div class="project-tile">
+        <img
+          src="https://i.postimg.cc/02xDZ5rQ/website-3407280-640.jpg"
+          alt=""
+        />
+        <a href="#">Tribute Page</a>
+      </div>
+      <div class="project-tile">
+        <img
+          src="https://i.postimg.cc/K80WxsCP/register-2819608-640.jpg"
+          alt=""
+        />
+        <a href="#">Technical Documentation Page</a>
+      </div>
+      <div class="project-tile">
+        <img
+          src="https://i.postimg.cc/gkq5B0DB/web-design-4875188-640.jpg"
+          alt=""
+        />
+        <a href="#">Survey Form</a>
+      </div>
+      <div class="project-tile">
+        <img
+          src="https://i.postimg.cc/02xDZ5rQ/website-3407280-640.jpg"
+          alt=""
+        />
+        <a href="#">Product Landing Page</a>
+      </div>
+      <div class="project-tile">
+        <img
+          src="https://i.postimg.cc/K80WxsCP/register-2819608-640.jpg"
+          alt=""
+        />
+        <a href="#">Website</a>
+      </div>
+      <div class="project-tile">
+        <img
+          src="https://i.postimg.cc/gkq5B0DB/web-design-4875188-640.jpg"
+          alt=""
+        />
+        <a href="#">A simple app</a>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div>
+        <a
+          id="profile-link"
+          href="https://github.com/filipechau"
+          target="_blank  "
+          >Github</a
+        >
         <a href="witter.com/filipe_chau">Twitter</a>
         <a href="linkedin.com/in/filipe-chau-b25820211/">Linkedin</a>
       </div>
     </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>
 </html>
