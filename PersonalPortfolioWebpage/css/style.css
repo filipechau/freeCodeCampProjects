@@ -84,13 +84,14 @@
  /* footer section */
  #contact{
      margin-top: 40px;
-     padding: 4rem;
+     padding: 5rem;
      background-color: #020202;
      text-align: center;
      
  }
  #contact a {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+    display: inline-block;
+    margin: 0 55px;
+    text-decoration: none;
+    color: #fff;
  }
