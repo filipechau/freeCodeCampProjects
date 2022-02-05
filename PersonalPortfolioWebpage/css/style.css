@@ -12,7 +12,7 @@
 
 #navbar{
     overflow: hidden;
-    background: #000;
+    background-color: #000;
     position: fixed;/* set the navbar to fixed position */
     top: 0; /* Position the navbar at top of the page */
     width: 100%; /* Full width */
@@ -78,20 +78,36 @@
  }
  .container .project-tile a{
     text-decoration: none;
-    font-weight: 600px;
+    font-weight: 600;
+    color: #000;
  }
  
  /* footer section */
- #contact{
+ .contact{
      margin-top: 40px;
-     padding: 5rem;
+     padding: 3rem;
      background-color: #020202;
      text-align: center;
      
  }
- #contact a {
+ .contact a {
     display: inline-block;
-    margin: 0 55px;
+    margin: 0 35px;
     text-decoration: none;
     color: #fff;
+    font-size: 1.5rem;
  }
+ .contact .copy a{
+     font-size: 1rem;
+     margin-top: 40px;
+ }
+
+ /*  Media Queries */
+@media(max-width: 768px){
+
+    .container .project-tile a{
+        text-decoration: none;
+        font-size: 1.25rem;
+    }
+    
+}
