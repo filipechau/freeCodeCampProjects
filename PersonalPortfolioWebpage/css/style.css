@@ -7,3 +7,86 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*---- Navbar starts here ----*/
+
+#navbar{
+    overflow: hidden;
+    background: #000;
+    position: fixed;/* set the navbar to fixed position */
+    top: 0; /* Position the navbar at top of the page */
+    width: 100%; /* Full width */
+}
+#navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 58px;
+}
+#navbar ul li{
+    text-align: right; 
+    padding: 18px 26px;
+    list-style: none;
+}
+#navbar ul li a{
+    color: #f2f2f2;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: none; 
+}
+#welcome-section{
+    height: 100vh;
+    background: rgb(83, 6, 6); 
+}
+.section{
+    padding: 1.5rem 3%;
+}
+ .name {
+    color: #fff;
+    line-height: 2.55rem;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+ }
+
+ /* my projects section */
+ .heading{
+   font-size: 2.5rem;
+   text-align: center;
+   margin-top: 25px;
+}
+ .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+ }
+ .container .project-tile{
+     flex: 1 1 25rem;
+     box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+     text-align: center;
+     margin-top: 50px;
+ }
+ .container .project-tile img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+     margin-bottom: 10px;
+ }
+ .container .project-tile a{
+    text-decoration: none;
+    font-weight: 600px;
+ }
+ 
+ /* footer section */
+ #contact{
+     margin-top: 40px;
+     padding: 4rem;
+     background-color: #020202;
+ }
+ .social{
+     text-align: center;
+ }
